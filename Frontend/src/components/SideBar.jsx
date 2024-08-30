@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 const SideBar = () => {
   return (
-    <div className="text-white flex lg:flex-col items-center justify-start lg:h-screen lg:px-3 lg:py-7 gap-6">
+    <div className="fixed text-white flex lg:flex-col items-center justify-start lg:h-screen lg:px-3 lg:py-7 gap-6 w-56">
       <div>
         <img
           className="w-10 lg:w-12"

@@ -6,9 +6,11 @@ const App = () => {
   return (
     <div className="flex flex-col lg:flex-row justify-start items-start text-white">
       <SideBar />
-      <div className="flex-1 px-5">
+      <div className="flex-1 px-10 pl-60">
         <NavBar />
-        <Outlet />
+        <div className="mt-28">
+          <Outlet />
+        </div>
       </div>
     </div>
   );

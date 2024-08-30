@@ -6,7 +6,7 @@ import { FaUserGroup } from "react-icons/fa6";
 
 const NavBar = () => {
   return (
-    <div className="text-white py-8 flex justify-between items-center w-full">
+    <div className="text-white py-8 flex justify-between items-center pr-10 w-[calc(100%-240px)] fixed bg-[#101014]">
       <div className="flex justify-start items-center gap-5">
         <p>
           <IoIosArrowBack className="font-bold text-xl text-[#969d9a]" />
@@ -36,7 +36,7 @@ const NavBar = () => {
         </section>
       </div>
       <div className="flex flex-row-reverse items-center justify-start w-full">
-        <div className="flex flex-row-reverse gap-5 px-5 border-l border-[#404044]">
+        <div className="flex flex-row-reverse gap-5 pl-5 border-l border-[#404044]">
           <div className="p-3 rounded-full text-lg bg-[#202024] hover:bg-[#404044]">
             <FaUser />
           </div>
@@ -62,7 +62,6 @@ const NavBar = () => {
           </ul>
         </section>
       </div>
-      <div></div>
     </div>
   );
 };

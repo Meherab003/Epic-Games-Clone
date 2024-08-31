@@ -6,7 +6,7 @@ import { FaUserGroup } from "react-icons/fa6";
 
 const NavBar = () => {
   return (
-    <div className="text-white py-8 flex justify-between items-center pr-10 w-[calc(100%-240px)] fixed bg-[#101014]">
+    <div className="text-white py-8 flex justify-between items-center pr-10 w-[calc(100%-240px)] fixed bg-[#101014] z-[10]">
       <div className="flex justify-start items-center gap-5">
         <p>
           <IoIosArrowBack className="font-bold text-xl text-[#969d9a]" />

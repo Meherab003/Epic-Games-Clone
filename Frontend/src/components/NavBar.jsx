@@ -5,16 +5,30 @@ import { FaUser } from "react-icons/fa";
 import { FaUserGroup } from "react-icons/fa6";
 
 const NavBar = () => {
+  const handleSearch = e => {
+    e.preventDefault()
+    const form = e.target;
+    const search = form.search.value;
+    console.log(search);
+    // form.reset()
+  }
   return (
     <div className="text-white py-8 flex justify-between items-center pr-10 w-[calc(100%-240px)] fixed bg-[#101014] z-[10]">
       <div className="flex justify-start items-center gap-5">
         <p>
           <IoIosArrowBack className="font-bold text-xl text-[#969d9a]" />
         </p>
-        <div className="bg-[#202024] text-[#969d9a] w-56 text-sm p-2 px-3 rounded-full font-medium flex justify-start items-center gap-3 hover:bg-[#404044]">
-          <CiSearch className="text-[16px]" />
-          Search store
-        </div>
+        <form onSubmit={handleSearch} className="bg-[#202024] text-[#969d9a] w-56 text-sm py-2 px-3 font-medium flex justify-start items-center gap-3 hover:bg-[#404044] group rounded-full">
+            <button>
+              <CiSearch className="text-[16px]" />
+            </button>
+            <input
+              type="text"
+              name='search'
+              placeholder="Search store"
+              className="bg-[#202024] text-[#969d9a] text-sm  font-medium flex justify-start outline-none group-hover:bg-[#404044]"
+            />
+          </form>
         <section>
           <ul className="flex justify-start items-center gap-10 px-3">
             <li>

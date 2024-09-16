@@ -1,3 +1,4 @@
+import Big3 from "../components/Big3";
 import FreeGames from "../components/FreeGames";
 import Section1 from "../components/Section1";
 import Section2 from "../components/Section2";
@@ -12,6 +13,7 @@ const Home = () => {
             <Section3 />
             <Section4 />
             <FreeGames />
+            <Big3 />
         </div>
     );
 };

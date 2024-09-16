@@ -4,7 +4,7 @@ import SideBar from "./components/SideBar";
 
 const App = () => {
   return (
-    <div className="flex flex-col lg:flex-row justify-start items-start text-white">
+    <div className="flex flex-col lg:flex-row justify-start bg-[#101014] items-start text-white">
       <SideBar />
       <div className="flex-1 px-10 pl-60">
         <NavBar />
